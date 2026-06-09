@@ -1,0 +1,23 @@
+[package]
+authors = ["Nautilus Cyberneering <info@nautilus-cyberneering.de>, Mick van Dijke <mick@dutchbits.nl>"]
+categories = ["network-programming"]
+description = "Generic networking primitive types for Torrust projects."
+documentation = "https://docs.rs/torrust-net-primitives/"
+edition = "2024"
+homepage = "https://torrust.com/"
+keywords = ["library", "net", "primitives", "torrust"]
+license = "AGPL-3.0-only"
+name = "torrust-net-primitives"
+publish = true
+readme = "README.md"
+repository = "https://github.com/torrust/torrust-net-primitives"
+rust-version = "1.88"
+version = "0.1.0"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+url = "2.5.4"
+
+[dev-dependencies]
+rstest = "0.25.0"
